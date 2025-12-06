@@ -3,7 +3,7 @@ title: "Rust勉強中によく分からなかったこと"
 emoji: "🎉"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["rust"]
-published: false
+published: true
 ---
 # はじめに
 この記事は自分がZedのExtentionを作りながらRustの勉強をした時に、よく分からない構文が出てきたので備忘録的に書きます。
