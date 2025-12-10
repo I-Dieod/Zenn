@@ -1,18 +1,32 @@
 ---
 title: "Rust勉強中によく分からなかったこと"
-emoji: "🎉"
+emoji: "📛"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["rust"]
 published: true
 ---
 # はじめに
-この記事は自分がZedのExtentionを作りながらRustの勉強をした時に、よく分からない構文が出てきたので備忘録的に書きます。
+この記事は自分がZedのExtentionを作りながらとか、Advent Of Codeを解きながらRustの勉強をした時に、よく分からない構文が出てきたので備忘録的に書きます。
 勉強しながら調べながらこの記事を書くので、たまに覗くと増えてる可能性があります。（12/6現在）
 
 ## 対象読者
 - Rustを勉強し始めて理解できない構文を見つけた人
 
 # この構文ってどういう意味？
+## use std::io::{self, Read};
+この構文を見たのは、[Advent of Code - 2025](https://adventofcode.com/2025)の問題を解いている時です。
+問題から与えられる入力を読み取るための標準入力ライブラリの`use`つまりインポートを宣言していますが、`self`ってなんなの？となりました。
+```rust
+use std::io::{self, Read};
+```
+どうやらこの`self`はPythonのクラスでいう`self`と同じ働きをするそうです。つまり、インポートしているモジュール自身を指します。
+公式ドキュメントの記載の通り、このプログラムは`std::io`モジュールと`std::io::Read`モジュールを同時にインポートするようです。
+```rust
+use std::io;
+use std::io::Read;
+```
+https://doc.rust-lang.org/std/keyword.self.html
+
 ## || Path::new("")
 この構文を見たのはワークスペースのディレクトリ構造を操作するStructメソッドを記述している時です。
 ```rust
