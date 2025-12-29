@@ -1,8 +1,8 @@
 ---
-title: "TODO検索するCLIツールを作って配布しました"
+title: "TODO検索するCLIツールを作ってHomebrewで配布した備忘録"
 emoji: "📌"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["rust","brew"]
+topics: ["rust","homebrew"]
 published: true
 ---
 # はじめに
