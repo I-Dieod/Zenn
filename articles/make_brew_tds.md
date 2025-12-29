@@ -136,7 +136,7 @@ brew install [your_user_name]/[package_name_you_want]
 brew install [your_user_name]/tap/[package_name_you_want]
 ```
 これで自作したツールが`brew`経由でお手元のCLI上で使えるようになると思います。
-![](/images/tds_run.png)
+![](/images/make_brew_tds/tds_run.png)
 *今回配布したツールが動作する様子*
 
 :::message
