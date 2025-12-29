@@ -33,7 +33,6 @@ let cdu: String = env::current_dir().unwrap().to_string_lossy().to_string();
 let root_path = if args.len() > 1 { &args[1] } else { &cdu };
 
 println!("🔍 Scanning for COMMENT items in: {}", root_path);
-println!();
 ```
 
 ディレクトリのスキャンは`Path`オブジェクトにある`is_dir()`メソッドでディレクトリか否か判定し、再帰的に引数以下のファイルを探索します。
