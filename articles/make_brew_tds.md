@@ -3,7 +3,7 @@ title: "TODO検索するCLIツールを作って配布しました"
 emoji: "📌"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["rust","brew"]
-published: false
+published: true
 ---
 # はじめに
 この記事は自分がTodoコメント行を抽出するCLIツールを作成した話を、配布時の備忘録的に書くものです。
