@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/IrorI-DIEOD/Zenn#readme",
   "dependencies": {
-    "zenn-cli": "^0.2.10"
-  }
+    "zenn-cli": "^0.2.11"
+  },
+  "type": "commonjs"
 }
